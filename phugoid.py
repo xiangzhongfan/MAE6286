@@ -123,9 +123,9 @@ def plot_flight_path(zt, z0, theta0, N=1000):
     # Create Matplotlib figure.
     fig, ax = pyplot.subplots(figsize=(9.0, 4.0))
     ax.grid()
-    ax.set_title(f'Flight path for $C={C:.3f}$\n' +
-                 rf'($z_t={zt:.1f}$, $z_0={z0:.1f}$, ' +
-                 rf'$\theta_0={numpy.degrees(theta0):.1f}^o$)')
+    #ax.set_title(f'Flight path for $C={C:.3f}$\n' +
+    #             rf'($z_t={zt:.1f}$, $z_0={z0:.1f}$, ' +
+    #             rf'$\theta_0={numpy.degrees(theta0):.1f}^o$)')
     ax.set_xlabel(r'$x$')
     ax.set_ylabel(r'$z$')
     ax.plot(x, -z, linestyle='-', linewidth=2.0)
